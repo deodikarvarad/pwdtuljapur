@@ -12,7 +12,7 @@ const Footer = () => {
         <div>
           <h2 className="text-xl font-semibold mb-4">{t('Contact Us')}</h2>
           <p className="text-gray-200">{t('PWDSubdivisionOfficeTuljapur')}</p>
-          <p className="text-gray-200">{t('Email Id')}:tuljapur.de@mahapwd.gov.in</p>
+          <p className="text-gray-200">{t('Email Id')}: tuljapur.de@mahapwd.gov.in</p>
         </div>
       </div>
     </footer>
