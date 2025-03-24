@@ -31,30 +31,30 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen((prev) => !prev)}
-            className="lg:hidden text-gray-900 focus:outline-none text-4xl"
+            className="lg:hidden text-gray-900 focus:outline-none text-4xl mr-[5px]"
             >
-            {isMobileMenuOpen ? '✖' : '☰'}
+            {isMobileMenuOpen ? 'X' : '☰'}
           </button>
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex lg:gap-x-12">
-            <a href="#Services" className="text-lg font-semibold text-gray-900">{t('Services')}</a>
-            <a href="#Projects" className="text-lg font-semibold text-gray-900">{t('Projects')}</a>
-            <a href="#ContactUs" className="text-lg font-semibold text-gray-900">{t('Contact Us')}</a>
-            <a href="#Maps" className="text-lg font-semibold text-gray-900">{t('Maps')}</a>
+            <a href="#Services" className="text-lg font-semibold text-gray-900 hover:text-gray-600">{t('Services')}</a>
+            <a href="#Projects" className="text-lg font-semibold text-gray-900 hover:text-gray-600">{t('Projects')}</a>
+            <a href="#ContactUs" className="text-lg font-semibold text-gray-900 hover:text-gray-600">{t('Contact Us')}</a>
+            <a href="#Maps" className="text-lg font-semibold text-gray-900 hover:text-gray-600">{t('Maps')}</a>
           </div>
 
           {/* Language Dropdown Section for Desktop */}
           <div className="hidden lg:flex lg:flex-1 lg:justify-end relative">
             <button
               onClick={() => setIsDropdownOpen((prev) => !prev)}
-              className="text-sm font-semibold text-gray-900 px-4 py-2 bg-gray-100 rounded-md"
+              className="text-sm font-semibold text-gray-900 px-4 py-2 bg-gray-100 hover:bg-gray-200 border rounded-md"
             >
               {languages.find((lang) => lang.code === i18n.language)?.label} ▼
             </button>
 
             {isDropdownOpen && (
-              <div className="absolute right-0 mt-2 w-32 bg-white border border-gray-300 rounded-lg shadow-lg">
+              <div className="absolute right-0 mt-10 w-32 bg-white hover:bg-gray-100 border-2 border-gray-300 rounded-lg shadow-lg">
                 {languages.map((lang) => (
                   <button
                     key={lang.code}
