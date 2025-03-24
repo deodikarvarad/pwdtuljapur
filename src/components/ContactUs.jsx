@@ -9,7 +9,7 @@ const ContactUs = () => {
     <>
       {/* Title Section */}
       <div className="flex flex-col items-center">
-        <h1 id="Contact Us" className="text-4xl font-semibold mt-10 mb-10">{t('Contact Us')}</h1>
+        <h1 id="ContactUs" className="text-4xl font-semibold mt-10 mb-10">{t('Contact Us')}</h1>
       </div>
 
       {/* Cards Section */}

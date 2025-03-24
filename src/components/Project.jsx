@@ -13,6 +13,11 @@ import img16 from '../assets/abc.jpg';
 import img17 from '../assets/abc2.jpg';
 import img3 from '../assets/xyz.jpg';
 import img4 from '../assets/xyz1.jpg';
+import imga from '../assets/project (1).jpeg';
+import imgb from '../assets/project (2).jpeg';
+import imgc from '../assets/project (3).jpeg';
+import imgd from '../assets/project (4).jpeg';
+import imge from '../assets/project (5).jpeg';
 
 
 const Project = () => {
@@ -30,6 +35,7 @@ const Project = () => {
         <ProjectCard images={[img3, img4]} name={t('name4')} />
         <ProjectCard images={[img16, img17]} name={t('name5')} />
         <ProjectCard images={[img15]} name={t('name6')} />
+        <ProjectCard images={[imga, imgb,imgc,imgd,imge]} name={t('name7')}/>
       </div>
     </>
   );
