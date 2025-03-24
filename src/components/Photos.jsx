@@ -6,8 +6,10 @@ import Image3 from "../assets/IMG_5098.jpg";
 import Image4 from "../assets/IMG_5102.jpg";
 import img3 from "../assets/IMG_5104.jpg";
 import img4 from "../assets/IMG_5105.jpg";
+import imgA from "../assets/office (1).jpg"
+import imgB from "../assets/office (2).jpg"
 
-const images = [Image4, Image3, Image2, Image1, img3, img4,];
+const images = [imgA, Image4, imgB, Image3, Image2, Image1, img3, img4,];
 
 export default function Photos() {
   const [currentIndex, setCurrentIndex] = useState(0);

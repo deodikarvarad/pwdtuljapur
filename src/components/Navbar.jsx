@@ -31,8 +31,8 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen((prev) => !prev)}
-            className="lg:hidden text-gray-900 focus:outline-none"
-          >
+            className="lg:hidden text-gray-900 focus:outline-none text-4xl"
+            >
             {isMobileMenuOpen ? '✖' : '☰'}
           </button>
 
