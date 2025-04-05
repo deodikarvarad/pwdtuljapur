@@ -33,7 +33,7 @@ export default function Navbar() {
             onClick={() => setIsMobileMenuOpen((prev) => !prev)}
             className="lg:hidden text-gray-900 focus:outline-none text-4xl mr-[5px]"
             >
-            {isMobileMenuOpen ? 'X' : '☰'}
+            {isMobileMenuOpen ? 'x' : '☰'}
           </button>
 
           {/* Desktop Menu */}

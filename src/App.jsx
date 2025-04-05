@@ -9,6 +9,8 @@ import Flag from './components/Flag'
 import Map from './components/Map'
 import GoogleMaps from './components/GoogleMaps'
 import Photos from './components/Photos'
+import ProgramWorks from './components/ProgramWorks'
+import RestHouse from './components/RestHouse'
 
 function App() {
   return (
@@ -20,8 +22,10 @@ function App() {
     <Map/>
     <Hero/>
     <AllServices/>
+    <ProgramWorks/>
     <ContactUs/>
     <GoogleMaps/>
+    <RestHouse/>
     <Footer/>
     </>
   )
